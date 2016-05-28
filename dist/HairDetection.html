@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'HairDetection.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJIYWlyRGV0ZWN0aW9uLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5IYWlyRGV0ZWN0aW9uPC90aXRsZT4KICAgIDx2ZW5kb3I+YWJoaTliYWtzaGk8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD0iL2hvbWUvc3VqaXQyNS9MaWJzL09wZW5DVi9vcGVuY3YtMy4xLjAvbGliIiAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IkhhaXJEZXRlY3Rpb24uamFyIiBzaXplPSIxMTY2OSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvb3BlbmN2LTMxMC5qYXIiIHNpemU9IjMxMjcxMiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogIDwvcmVzb3VyY2VzPgogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iSGFpckRldGVjdGlvbiIgPgogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPgogIDwvYXBwbGV0LWRlc2M+CiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImhhaXJkZXRlY3Rpb24uSGFpckRldGVjdGlvbiIgIG5hbWU9IkhhaXJEZXRlY3Rpb24iIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="/home/sujit25/Libs/OpenCV/opencv-3.1.0/lib" '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedhairdetection() {
+        dtjava.embed(
+            {
+                id : 'hairdetection',
+                url : 'HairDetection.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJIYWlyRGV0ZWN0aW9uLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5IYWlyRGV0ZWN0aW9uPC90aXRsZT4KICAgIDx2ZW5kb3I+YWJoaTliYWtzaGk8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD0iL2hvbWUvc3VqaXQyNS9MaWJzL09wZW5DVi9vcGVuY3YtMy4xLjAvbGliIiAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IkhhaXJEZXRlY3Rpb24uamFyIiBzaXplPSIxMTY2OSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvb3BlbmN2LTMxMC5qYXIiIHNpemU9IjMxMjcxMiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogIDwvcmVzb3VyY2VzPgogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iSGFpckRldGVjdGlvbiIgPgogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPgogIDwvYXBwbGV0LWRlc2M+CiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImhhaXJkZXRlY3Rpb24uSGFpckRldGVjdGlvbiIgIG5hbWU9IkhhaXJEZXRlY3Rpb24iIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="/home/sujit25/Libs/OpenCV/opencv-3.1.0/lib" '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedhairdetection);
+</script>
+
+</head><body>
+<h2>Test page for <b>HairDetection</b></h2>
+  <b>Webstart:</b> <a href='HairDetection.jnlp' onclick="return launchApplication('HairDetection.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

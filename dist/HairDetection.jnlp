@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HairDetection.jnlp">
+  <information>
+    <title>HairDetection</title>
+    <vendor>abhi9bakshi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path="/home/sujit25/Libs/OpenCV/opencv-3.1.0/lib" "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HairDetection.jar" size="11669" download="eager" />
+    <jar href="lib/opencv-310.jar" size="312712" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="HairDetection" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hairdetection.HairDetection"  name="HairDetection" />
+  <update check="always"/>
+</jnlp>
