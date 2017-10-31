@@ -49,7 +49,7 @@ for e.g. on my machine:
 -Djava.library.path="/home/sujit25/softwares/opencv-3.1.0-with-cuda8/release/lib"
 ```
 
-### Note: I have not tested application with any OpenCV version above 3.1.0.
+### Note: This application has not been tested with any OpenCV version above 3.1.0.
 
 ##### Running the Project
 * When you launch the project, you will see a window where you can choose source image.
